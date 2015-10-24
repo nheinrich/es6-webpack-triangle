@@ -1,0 +1,19 @@
+{
+  "name": "es6-webpack-triangle",
+  "version": "1.0.0",
+  "description": "http://jamesknelson.com/webpack-made-simple-build-es6-less-with-autorefresh-in-26-lines/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^5.8.29",
+    "babel-core": "^5.8.29",
+    "babel-loader": "^5.3.2",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
