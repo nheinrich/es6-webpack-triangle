@@ -1,5 +1,7 @@
 "use strict";
 
+require("./index.sass")
+
 import BlackTriangle from "./components/BlackTriangle";
 
 const triangle = new BlackTriangle("#triangle");

@@ -14,6 +14,11 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.sass$/,
+        include: APP_PATH,
+        loaders: ["style", "css?sourceMap", "sass?indentedSyntax&sourceMap"]
+      },
+      {
         test: /\.js$/,
         include: APP_PATH,
         loaders: ["babel"]
