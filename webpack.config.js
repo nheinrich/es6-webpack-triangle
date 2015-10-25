@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var htmlWebpackPlugin = require("html-webpack-plugin");
 
 var ROOT_PATH = path.resolve(__dirname);
 var APP_PATH = path.resolve(ROOT_PATH, "app");
@@ -25,8 +26,15 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new htmlWebpackPlugin({title: "Black Triangle"}),
+    new webpack.HotModuleReplacementPlugin()
+  ],
   devServer: {
-    contentBase: "./app"
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    progress: true
   },
   devtool: "source-map",
   debug: true,
